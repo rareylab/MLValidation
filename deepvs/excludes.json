@@ -1,0 +1,47 @@
+{
+  "ar"            : ["ar", "er_agonist", "er_antagonist", "gr", "mr", "ppar_gamma", "pr", "rxr_alpha", "tk", "ada", "alr2", "parp", "pnp", "sahh"],
+  "er_agonist"    : ["ar", "er_agonist", "er_antagonist", "gr", "mr", "ppar_gamma", "pr", "rxr_alpha", "pnp"],
+  "er_antagonist" : ["ar", "er_agonist", "er_antagonist", "gr", "mr", "ppar_gamma", "pr", "rxr_alpha"],
+  "gr"            : ["ar", "er_agonist", "er_antagonist", "gr", "mr", "ppar_gamma", "pr", "rxr_alpha"],
+  "mr"            : ["ar", "er_agonist", "er_antagonist", "gr", "mr", "ppar_gamma", "pr", "rxr_alpha", "parp"],
+  "ppar_gamma"    : ["ar", "er_agonist", "er_antagonist", "gr", "mr", "ppar_gamma", "pr", "rxr_alpha"],
+  "pr"            : ["ar", "er_agonist", "er_antagonist", "gr", "mr", "ppar_gamma", "pr", "rxr_alpha"],
+  "rxr_alpha"     : ["ar", "er_agonist", "er_antagonist", "gr", "mr", "ppar_gamma", "pr", "rxr_alpha", "cox1"],
+
+  "cdk2"          : ["cdk2", "egfr", "fgfr1", "hsp90", "p38", "pdgfrb", "src", "tk", "vegfr2"],
+  "egfr"          : ["cdk2", "egfr", "fgfr1", "hsp90", "p38", "pdgfrb", "src", "tk", "vegfr2"],
+  "fgfr1"         : ["cdk2", "egfr", "fgfr1", "hsp90", "p38", "pdgfrb", "src", "tk", "vegfr2"],
+  "hsp90"         : ["cdk2", "egfr", "fgfr1", "hsp90", "p38", "pdgfrb", "src", "tk", "vegfr2"],
+  "p38"           : ["cdk2", "egfr", "fgfr1", "hsp90", "p38", "pdgfrb", "src", "tk", "vegfr2"],
+  "pdgfrb"        : ["cdk2", "egfr", "fgfr1", "hsp90", "p38", "pdgfrb", "src", "tk", "vegfr2"],
+  "src"           : ["cdk2", "egfr", "fgfr1", "hsp90", "p38", "pdgfrb", "src", "tk", "vegfr2", "pde5"],
+  "tk"            : ["cdk2", "egfr", "fgfr1", "hsp90", "p38", "pdgfrb", "src", "tk", "vegfr2", "ada", "comt", "alr2", "cox1", "gpb", "parp", "pnp", "sahh"],
+  "vegfr2"        : ["cdk2", "egfr", "fgfr1", "hsp90", "p38", "pdgfrb", "src", "tk", "vegfr2"],
+
+  "fxa"           : ["fxa", "thrombin", "trypsin", "dhfr", "gart"],
+  "thrombin"      : ["fxa", "thrombin", "trypsin", "dhfr", "er_antagonist"],
+  "trypsin"       : ["fxa", "thrombin", "trypsin", "ppar_gamma", "ada", "dhfr"],
+
+  "ace"           : ["ace", "ada", "comt", "pde5", "alr2"],
+  "ada"           : ["ace", "ada", "comt", "pde5"],
+  "comt"          : ["ace", "ada", "comt", "pde5", "rxr_alpha", "alr2", "ampc", "pnp"],
+  "pde5"          : ["ace", "ada", "comt", "pde5", "p38"],
+
+  "gart"          : ["gart", "dhfr", "ppar_gamma"],
+  "dhfr"          : ["gart", "dhfr", "ppar_gamma"],
+
+  "ache"          : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh", "fxa"],
+  "alr2"          : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh", "gart", "ace", "rxr_alpha", "ppar_gamma"],
+  "ampc"          : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh", "gart", "ace", "rxr_alpha", "ppar_gamma"],
+  "cox1"          : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh"],
+  "cox2"          : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh", "hsp90"],
+  "gpb"           : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh", "comt"],
+  "hivpr"         : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh"],
+  "hivrt"         : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh"],
+  "hmga"          : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh", "rxr_alpha", "ace", "gart"],
+  "inha"          : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh"],
+  "na"            : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh", "ppar_gamma", "thrombin", "trypsin", "ada"],
+  "parp"          : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh"],
+  "pnp"           : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh", "tk", "ada", "comt"],
+  "sahh"          : ["ache", "alr2", "ampc", "cox1", "cox2", "gpb", "hivpr", "hivrt", "hmga", "inha", "na", "parp", "pnp", "sahh", "tk", "ada", "comt"]
+}
