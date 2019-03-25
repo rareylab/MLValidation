@@ -1,18 +1,19 @@
 # Evaluation of Convolutional Neural Networks for Structure-based Virtual Screening
 The here provided files are part of the publication: 
 
-**Sieg. J., Flachsenberg F., Rarey M. _In The Need of Bias Control: Evaluating Chemical Data for Machine Learning in 
-Structure-Based Virtual Screening. 2018_**
+**Sieg. J., Flachsenberg F., Rarey M. 
+_In Need of Bias Control: Evaluating Chemical Data for Machine Learning in Structure-Based Virtual Screening_
+J. Chem. Inf. Model. 2019,  59, 3, 947-961
+[DOI: 10.1021/acs.jcim.8b00712](https://pubs.acs.org/doi/10.1021/acs.jcim.8b00712)**
 
-We provide the code mentioned in the paper for the two reimplementations of
+We provide the code for the two reimplementations of
 published Convolutional Neural networks (CNN) for the scoring of docked 
-protein-ligand complexes in Virtual Screening. 
+protein-ligand complexes in virtual screening. 
 
-The goal of the paper was to evaluate variations of the descriptors 
-and featurization of the input. Contrary to the original networks the reimplemented CNNs are not based on molecular
+The goal of the paper was to evaluate simple variations and feature subsets of the descriptors. Contrary to the original networks the reimplemented CNNs are not based on molecular
 docking. Instead of using the protein structure in complex with a small molecule only small molecules are used 
 while the protein is excluded completely. These networks are therefore ligand-based
-versions of the orginals. Still similar prediction performance
+versions of the originals. Interestingly, similar prediction performance
 can be achieved. Details are shown and discussed in the paper.
 
 ## Authors and License
@@ -37,7 +38,7 @@ conda install rdkit scikit-learn tensorflow keras
 conda install -c conda-forge imbalanced-learn 
  ```
 
-The data used for evaluation are the [DUD](dud.docking.org) (Partial Charges recalculated by Inhibox)  and [DUD-E](dude.docking.org) datasets.
+The data used for evaluation are the [DUD](http://dud.docking.org) (Partial Charges recalculated by Inhibox)  and [DUD-E](http://dude.docking.org) datasets.
 
 ## 1. Reimplemented CNN: DeepVS
 DeepVS is a CNN inspired from natural language processing. The original publication:
@@ -58,7 +59,7 @@ Train and evaluate the network. test_id specifies the protein target to use as
 test set in the leave-one-out cross validation:
 
 ```
-python DeepVS.py --input descriptor.csv --test_id 0 --exclude excludes.json
+python deepVS.py --input descriptor.csv --test_id 0 --exclude excludes.json
 ```
 
 
