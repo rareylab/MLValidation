@@ -82,7 +82,7 @@ a grid for featurization.
 Calculate descriptors for all molecules:
 
 ```
-python grid_descriptor.py --input DUD_E/*/*.smi --output grid3Dmols
+python grid_descriptor.py --input DUD_E/*/*.ism --output grid3Dmols
 ```
 
 
